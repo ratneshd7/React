@@ -11,7 +11,7 @@ function ExpenseItem(props) {
   }
     return (
       <div className="expense-item">
-        <ExpenseDate {...props} />
+        <ExpenseDate key={props.id} {...props} />
         <div className="expense-item__description">
           <h2>{title}</h2>
           <div className="expense-item__price">${props.amount}</div>
